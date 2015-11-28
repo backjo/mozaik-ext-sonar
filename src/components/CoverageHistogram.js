@@ -147,16 +147,11 @@ var CoverageHistogram = React.createClass({
     },
 
     render() {
-        var title = this.props.title || 'Analytics';
-        var avg = this.state.avg || '-';
-        var total = this.state.total || '-';
-
+        var title = this.props.title || 'Code Coverage Trend';
         var widget = (
             <div>
                 <div className="widget__header">
                     {title}
-          <span className="widget__header__count">
-          </span>
                     <i className="fa fa-line-chart" />
                 </div>
                 <div className="widget__body">

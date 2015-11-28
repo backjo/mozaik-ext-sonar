@@ -25,9 +25,7 @@ const client = function (mozaik) {
     return {
         coverageHistory: function(params) {
             return buildRequest(`/api/timemachine?resource=${params.id}&metrics=line_coverage,branch_coverage`)
-                .then(function(res) {
-                    return res.body;
-                });
+                .then(res => res.body);
         }
     };
 };
